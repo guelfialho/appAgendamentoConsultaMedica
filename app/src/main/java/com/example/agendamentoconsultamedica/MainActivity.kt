@@ -76,6 +76,12 @@ class MainActivity : AppCompatActivity() {
 
             val mensagem = "Consulta agendada para $nome em $dia/${mes + 1}/$ano às ${String.format("%02d:%02d", hora, minuto)}"
             Toast.makeText(this, mensagem, Toast.LENGTH_LONG).show()
+
+            etNome.text.clear()
+            btnData.text = "Selecionar Data"
+            btnHora.text = "Selecionar Horário"
+            dataSelecionada = false
+            horaSelecionada = false
         }
     }
 }
